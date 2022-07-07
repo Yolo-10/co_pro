@@ -1,0 +1,74 @@
+
+
+
+.__dumi-default-menu-header {
+  display: none;
+}
+
+.__dumi-default-layout {
+  padding: 16px 16px 50px 318px;
+}
+.__dumi-default-layout-toc {
+  display: none;
+}
+
+:root {
+  
+  --sys-wid: 1000px;
+  --clr-main: #54c1c8;
+  --clr-sub: #cde5e5;
+  --clr-grdf: #518cfc;
+  --clr-grdt: #4db0d4;
+  --clr-sel: #ff6600;
+  font-size: 62.5%;
+}
+@clr-main: #54c1c8;
+:root.red {
+  
+  --sys-wid: 1000px;
+  --clr-main: #dd0000;
+  --clr-sub: #cde5e5;
+  --clr-grdf: #518cfc;
+  --clr-grdt: #4db0d4;
+  --clr-sel: #ff6600;
+
+  font-size: 62.5%;
+}
+
+
+.btn01 {
+  display: block;
+  width: 286px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: var(--clr-main);
+  padding: 1rem 0;
+  border: 1px solid var(--clr-main);
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+
+  &:hover{
+    color: var(--clr-main);
+    background-color: #fff;
+
+    &:after {
+      border-bottom: 10px solid var(--clr-main);
+    }
+  }
+
+  &:after {
+    color: #fff;
+    border-right: 0px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    transition: all 0.2s ease;
+
+  }
+}

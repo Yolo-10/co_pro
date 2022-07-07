@@ -1,0 +1,56 @@
+.cta{
+  width: 100%;
+  background-color: var(--clr-main);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+
+  .cta_title{
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .c_width{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+
+    .cta_tel{
+      width: 50%;
+
+      .tel_telnum{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      .cta_add{
+        letter-spacing: 0.8px;
+      }
+    }
+
+    .cta_btn{
+      margin: 3px 0;
+      width: 50%;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      a{
+        display: block;
+        color: #fff;
+        font-size: 25px;
+      }
+
+      &:hover{
+        background-color: #fff;
+
+        a{
+          color: var(--clr-main);
+        }
+      }
+    }
+  }
+}

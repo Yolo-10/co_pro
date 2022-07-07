@@ -1,0 +1,142 @@
+.pg_main{
+  section{
+    .sc-list01 .m-bd .m-item > span{
+      font-weight: normal;
+    }
+
+    .m-nav{
+      max-width: var(--sys-wid);
+      display: flex;
+      margin:30px auto;
+      min-height: 50px;
+      font-size:16px;
+    
+      &>a{
+        font-weight: normal;
+    
+        &+a{
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.pg_list{
+
+  .menu_tab{
+    display: flex;
+    margin: 0 auto;
+    max-width: var(--sys-wid);
+
+    .active{
+      background-color: #54c1c8 !important;
+      color: #fff !important;
+    }
+
+    &>li{
+      list-style: none;
+      width: calc(100% / 3);
+      background-color: #e5e5e5;
+      text-align: center;
+      color: #90507c;
+      font-size: 20px;
+      padding: 1.2rem 0;
+      
+      &+li{
+        margin-left: 10px;
+      }
+
+      &:hover{
+        background-color: #54c1c8;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .m_bd{
+    margin: 0 auto;
+    max-width: var(--sys-wid);
+
+    .sc-Img01 .m-bd .m-item .m-cnt{
+      font-weight: normal;
+      width: 100%;
+  
+      &>.m-wd>span{
+        font-weight: normal;
+      }
+    }
+  
+    .sc-list06{
+      margin-bottom: 70px;
+    }
+  
+    .sc-list07 .m-bd{
+      border: none;
+      
+      .m-item{
+        padding: 0;
+        flex-direction:column;
+    
+        &>div{
+          width: 100%;
+        }
+  
+        &>.m-lt{
+          &>.title{
+            font-weight: normal;
+            color: #333;
+          }
+  
+          &>.label{
+            font-size: 28px;
+            color: #333;
+          }
+        }
+  
+        &>.m-rt > .m-cnt {
+          font-weight: normal ;
+        }
+      }
+    }
+  
+    .sc4{
+      .sc-list07 .sc-title {
+        span{
+          margin-left:0 ;
+        }
+      }
+     
+  
+      .sc-title{
+        justify-content: flex-start;
+      }
+  
+      .sc-img04 .m-bd{
+        flex-direction: column;
+  
+        div{
+          width: 100%;
+        }
+      }
+  
+      .capsule_box{
+        border: 1px solid #ffa536;
+        padding: 1rem 2rem;
+  
+        .sc-Img01 {
+          &>.sc-title{
+            color: #ffa536;
+          }
+  
+          &>.m-bd .m-item{
+          flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
