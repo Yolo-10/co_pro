@@ -8,8 +8,7 @@ const listPage=()=> {
   const [activeLi,setActiveLi] = useState(0);
   const {
     title,navList,
-    list06_1,list07_1,list06_2,list07_2,list06_3,list07_3,
-    list07_4,list07_5,img04,sc4_title,img01,sc4_nearBox,sc4_inBox,
+    section1,section2,section3,section4
   } = list; 
 
   const handleLiClick = (index)=>{
@@ -27,31 +26,34 @@ const listPage=()=> {
 
       <div className='m_bd'>
         <section style={{"display":activeLi == 0? "block":"none"}}>
-          <List07 data={list07_1}/>
-          <List06 data={list06_1}/>
+          <List07 data={section1.list07_1}/>
+          <List06 data={section1.list06_1}/>
         </section>
 
         <section style={{"display":activeLi == 1? "block":"none"}}>
-          <List07 data={list07_2}/>
-          <List06 data={list06_2}/>
+          <List07 data={section2.list07_2}/>
+          <List06 data={section2.list06_2}/>
         </section>
 
         <section style={{"display":activeLi == 2? "block":"none"}}>
-          <List07 data={list07_3}/>
-          <List06 data={list06_3}/>
+          <List07 data={section3.list07_3}/>
+          <List06 data={section3.list06_3}/>
         </section>
 
         <section style={{"display":activeLi == 3? "block":"none"}} className="sc4">
-          <List07 data={list07_4}/>
-          <Title title={sc4_title} line="true"/>
-          <Img04 data={img04}/>
-          <img src="https://ginza-brc.jp/img/capsule02.jpg" alt="" />
+          <List07 data={section4.list07_4}/>
+          
+          <Title title={section4.title} line="true"/>
+          <Img04 data={section4.img04}/>
+          <img src={section4.img} alt="" />
+
           <div className='capsule_box'>
-            <Img01 data={img01}/>
-            <p>{sc4_inBox}</p>
+            <Img01 data={section4.img01}/>
+            <p>{section4.inBoxP}</p>
           </div>
-          <p>{sc4_nearBox}</p>
-          <List07 data={list07_5}/>
+          <p>{section4.nearBoxP}</p>
+
+          <List07 data={section4.list07_5}/>
         </section>
 
       </div>

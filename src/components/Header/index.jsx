@@ -23,7 +23,7 @@ const Header = ({data})=>{
       </header>
 
     <nav>
-      {data.lis.map((item,i)=>
+      {data.nav.map((item,i)=>
           <li key={i}><Link to={item.url}>{item.name}<div></div></Link></li>
       )}
     </nav>
